@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Chinese Cuisine Restaurant{% endblock %}
+
+{% block content %}
+<div class="bg-light p-5 rounded-3 mb-4">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to Chinese Cuisine Restaurant</h1>
+        <p class="col-md-8 fs-4">Experience authentic Chinese cuisine from the Eight Great Culinary Traditions</p>
+        <a href="{{ url_for('menu') }}" class="btn btn-primary btn-lg">Browse Menu</a>
+    </div>
+</div>
+
+<section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Popular Dishes</h2>
+        <a href="{{ url_for('menu') }}" class="btn btn-outline-primary">View All</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for product in popular_products %}
+        <div class="col">
+            <div class="card h-100 product-card">
+                <img src="{{ get_image_path(product.id, product.category) }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text text-muted">{{ product.category }}</p>
+                    <p class="card-text">{{ product.description[:60] }}{% if product.description|length > 60 %}...{% endif %}</p>
+                    {% if product.get('spicy_level') %}
+                    <p class="card-text"><small class="text-danger">Spicy Level: {{ '🌶' * product.spicy_level }}</small></p>
+                    {% endif %}
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fs-5 fw-bold text-danger">¥{{ product.price }}</span>
+                        <div>
+                            <a href="{{ url_for('product_detail', item_id=product.id) }}" class="btn btn-sm btn-outline-secondary me-1">Details</a>
+                            <button class="btn btn-sm btn-primary" onclick="addToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="text-center mt-4">
+        <div class="card bg-light">
+            <div class="card-body">
+                <h5 class="card-title">Want Personalized Recommendations?</h5>
+                <p class="card-text">Our AI recommendation system will suggest the best dishes based on your order history.</p>
+                <a href="{{ url_for('recommendations') }}" class="btn btn-success">View Recommendations</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Sichuan Cuisine</h5>
+                    <a href="{{ url_for('menu') }}" class="btn btn-sm btn-outline-light">More</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for product in sichuan_dishes %}
+                    <div class="col-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body p-2 text-center">
+                                <h6 class="card-title">{{ product.name }}</h6>
+                                <p class="card-text text-danger fw-bold">¥{{ product.price }}</p>
+                                {% if product.get('spicy_level') %}
+                                <p class="card-text"><small class="text-danger">{{ '🌶' * product.spicy_level }}</small></p>
+                                {% endif %}
+                                <button class="btn btn-sm btn-outline-primary" onclick="addToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">加入购物车</button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Cantonese Cuisine</h5>
+                    <a href="{{ url_for('menu') }}" class="btn btn-sm btn-outline-light">More</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for product in cantonese_dishes %}
+                    <div class="col-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body p-2 text-center">
+                                <h6 class="card-title">{{ product.name }}</h6>
+                                <p class="card-text text-danger fw-bold">¥{{ product.price }}</p>
+                                <button class="btn btn-sm btn-outline-primary" onclick="addToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-warning text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Hunan Cuisine</h5>
+                    <a href="{{ url_for('menu') }}" class="btn btn-sm btn-outline-light">More</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for product in hunan_dishes %}
+                    <div class="col-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body p-2 text-center">
+                                <h6 class="card-title">{{ product.name }}</h6>
+                                <p class="card-text text-danger fw-bold">¥{{ product.price }}</p>
+                                {% if product.get('spicy_level') %}
+                                <p class="card-text"><small class="text-danger">{{ '🌶' * product.spicy_level }}</small></p>
+                                {% endif %}
+                                <button class="btn btn-sm btn-outline-primary" onclick="addToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Tea</h5>
+                    <a href="{{ url_for('menu') }}" class="btn btn-sm btn-outline-light">More</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% for product in tea_drinks %}
+                    <div class="col-6 col-lg-4 mb-3">
+                        <div class="card h-100 border-0">
+                            <div class="card-body p-2 text-center">
+                                <h6 class="card-title">{{ product.name }}</h6>
+                                <p class="card-text text-danger fw-bold">¥{{ product.price }}</p>
+                                <button class="btn btn-sm btn-outline-primary" onclick="addToCart('{{ product.id }}', '{{ product.name }}', '{{ product.price }}')">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
