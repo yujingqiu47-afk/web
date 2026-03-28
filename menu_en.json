@@ -1,0 +1,449 @@
+{
+  "dishes": {
+    "sichuan": [
+      {
+        "id": "sc1",
+        "name": "Mapo Tofu",
+        "price": 28,
+        "category": "Sichuan Cuisine",
+        "description": "Classic Sichuan dish, tender tofu with spicy and numbing flavors",
+        "spicy_level": 4
+      },
+      {
+        "id": "sc2",
+        "name": "Boiled Fish in Hot Chili Oil",
+        "price": 58,
+        "category": "Sichuan Cuisine",
+        "description": "Tender fish with intense spicy aroma, topped with abundant chili peppers and Sichuan peppercorns",
+        "spicy_level": 5
+      },
+      {
+        "id": "sc3",
+        "name": "Twice-Cooked Pork",
+        "price": 38,
+        "category": "Sichuan Cuisine",
+        "description": "Pork belly with perfect fat-to-lean ratio, stir-fried with green peppers and garlic sprouts",
+        "spicy_level": 3
+      },
+      {
+        "id": "sc4",
+        "name": "Kung Pao Chicken",
+        "price": 32,
+        "category": "Sichuan Cuisine",
+        "description": "Tender chicken cubes with crispy peanuts, sweet and sour with mild spice",
+        "spicy_level": 2
+      },
+      {
+        "id": "sc5",
+        "name": "Husband and Wife Lung Slices",
+        "price": 35,
+        "category": "Sichuan Cuisine",
+        "description": "Thinly sliced beef and offal with spicy and numbing flavors, rich in texture",
+        "spicy_level": 4
+      },
+      {
+        "id": "sc6",
+        "name": "Spicy Hot Pot",
+        "price": 45,
+        "category": "Sichuan Cuisine",
+        "description": "Tender duck blood with tripe and duck intestine, spicy and piping hot",
+        "spicy_level": 5
+      },
+      {
+        "id": "sc7",
+        "name": "Fish-Flavored Shredded Pork",
+        "price": 28,
+        "category": "Sichuan Cuisine",
+        "description": "Pork strips with wood ear mushrooms and bamboo shoots, rich fish-flavored sauce",
+        "spicy_level": 2
+      },
+      {
+        "id": "sc8",
+        "name": "Mouth-Watering Chicken",
+        "price": 32,
+        "category": "Sichuan Cuisine",
+        "description": "Tender chicken in red chili oil, spicy and numbing with rich texture",
+        "spicy_level": 3
+      }
+    ],
+    "cantonese": [
+      {
+        "id": "gd1",
+        "name": "White Cut Chicken",
+        "price": 48,
+        "category": "Cantonese Cuisine",
+        "description": "Tender chicken with original flavor, served with ginger and scallion sauce",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd2",
+        "name": "Steamed Sea Bass",
+        "price": 68,
+        "category": "Cantonese Cuisine",
+        "description": "Delicate fish meat preserving natural taste, light and fresh",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd3",
+        "name": "Roasted Goose",
+        "price": 78,
+        "category": "Cantonese Cuisine",
+        "description": "Crispy skin and tender meat with aromatic fragrance, famous Cantonese dish",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd4",
+        "name": "Char Siu (BBQ Pork)",
+        "price": 38,
+        "category": "Cantonese Cuisine",
+        "description": "Sweet pork with bright red color and soft texture",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd5",
+        "name": "Honey Glazed Char Siu",
+        "price": 42,
+        "category": "Cantonese Cuisine",
+        "description": "Sweet but not cloying, crispy outside and tender inside with rich honey glaze",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd6",
+        "name": "Shrimp Dumplings (Har Gow)",
+        "price": 28,
+        "category": "Cantonese Cuisine",
+        "description": "Thin skin with tender filling, fresh shrimp meat, classic Cantonese dim sum",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd7",
+        "name": "Rice Noodle Rolls",
+        "price": 18,
+        "category": "Cantonese Cuisine",
+        "description": "Silky rice noodles with shrimp or char siu, topped with soy sauce",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd8",
+        "name": "Dry-Fried Beef Chow Fun",
+        "price": 32,
+        "category": "Cantonese Cuisine",
+        "description": "Smooth rice noodles with tender beef, perfect wok hei",
+        "spicy_level": 0
+      }
+    ],
+    "hunan": [
+      {
+        "id": "hn1",
+        "name": "Steamed Fish Head with Diced Hot Red Peppers",
+        "price": 68,
+        "category": "Hunan Cuisine",
+        "description": "Plump fish head with fresh and spicy chopped peppers, rich sauce",
+        "spicy_level": 4
+      },
+      {
+        "id": "hn2",
+        "name": "Stir-Fried Pork",
+        "price": 35,
+        "category": "Hunan Cuisine",
+        "description": "Hunan home-style dish, spicy pork with crispy green peppers",
+        "spicy_level": 3
+      },
+      {
+        "id": "hn3",
+        "name": "Chairman Mao's Red-Braised Pork",
+        "price": 48,
+        "category": "Hunan Cuisine",
+        "description": "Tender meat with bright red color, sweet but not cloying",
+        "spicy_level": 1
+      },
+      {
+        "id": "hn4",
+        "name": "Xiangxi Grandma's Dish",
+        "price": 22,
+        "category": "Hunan Cuisine",
+        "description": "Appetizing side dish, sour and spicy, traditional Xiangxi flavor",
+        "spicy_level": 3
+      },
+      {
+        "id": "hn5",
+        "name": "Farmhouse Stir-Fried Pork",
+        "price": 32,
+        "category": "Hunan Cuisine",
+        "description": "Perfect combination of green peppers and pork belly, spicy and appetizing",
+        "spicy_level": 3
+      },
+      {
+        "id": "hn6",
+        "name": "Spicy Crayfish",
+        "price": 58,
+        "category": "Hunan Cuisine",
+        "description": "Crayfish with spicy and numbing flavors, rich and flavorful sauce",
+        "spicy_level": 5
+      }
+    ],
+    "shandong": [
+      {
+        "id": "sd1",
+        "name": "Nine-Turn Large Intestine",
+        "price": 42,
+        "category": "Shandong Cuisine",
+        "description": "Complex flavors of sour, sweet, salty, spicy and fragrant, tender pork intestine",
+        "spicy_level": 1
+      },
+      {
+        "id": "sd2",
+        "name": "Sweet and Sour Carp",
+        "price": 58,
+        "category": "Shandong Cuisine",
+        "description": "Tender fish meat, crispy outside and tender inside with rich sweet and sour sauce",
+        "spicy_level": 0
+      },
+      {
+        "id": "sd3",
+        "name": "Braised Sea Cucumber with Scallions",
+        "price": 128,
+        "category": "Shandong Cuisine",
+        "description": "Soft sea cucumber with rich scallion aroma, nutritious",
+        "spicy_level": 0
+      },
+      {
+        "id": "sd4",
+        "name": "Dezhou Braised Chicken",
+        "price": 48,
+        "category": "Shandong Cuisine",
+        "description": "Tender chicken with rich aroma, easily separated from bones",
+        "spicy_level": 0
+      },
+      {
+        "id": "sd5",
+        "name": "Quick-Fried Double Crispness",
+        "price": 38,
+        "category": "Shandong Cuisine",
+        "description": "Stir-fried pork stomach and chicken gizzard, crispy and tender, precise cooking",
+        "spicy_level": 0
+      }
+    ],
+    "jiangsu": [
+      {
+        "id": "js1",
+        "name": "Squirrel-Shaped Mandarin Fish",
+        "price": 78,
+        "category": "Jiangsu Cuisine",
+        "description": "Tender fish meat with beautiful presentation, sweet and sour taste",
+        "spicy_level": 0
+      },
+      {
+        "id": "js2",
+        "name": "Lion's Head Meatballs",
+        "price": 48,
+        "category": "Jiangsu Cuisine",
+        "description": "Soft meatballs, rich but not greasy, savory broth",
+        "spicy_level": 0
+      },
+      {
+        "id": "js3",
+        "name": "Crystal Shrimp",
+        "price": 58,
+        "category": "Jiangsu Cuisine",
+        "description": "Translucent shrimp with crispy texture, light and fresh",
+        "spicy_level": 0
+      },
+      {
+        "id": "js4",
+        "name": "Tofu with Crab Roe",
+        "price": 68,
+        "category": "Jiangsu Cuisine",
+        "description": "Silky tofu with fragrant crab roe, rich broth",
+        "spicy_level": 0
+      },
+      {
+        "id": "js5",
+        "name": "Braised Eel in Soy Sauce",
+        "price": 72,
+        "category": "Jiangsu Cuisine",
+        "description": "Tender eel with delicious taste, famous Jiangsu dish",
+        "spicy_level": 0
+      }
+    ],
+    "zhejiang": [
+      {
+        "id": "zj1",
+        "name": "West Lake Vinegar Fish",
+        "price": 68,
+        "category": "Zhejiang Cuisine",
+        "description": "Tender grass carp with balanced sweet and sour taste, Hangzhou specialty",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj2",
+        "name": "Dongpo Pork",
+        "price": 52,
+        "category": "Zhejiang Cuisine",
+        "description": "Pork belly with perfect fat-to-lean ratio, tender and flavorful with rich sauce",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj3",
+        "name": "Longjing Shrimp",
+        "price": 78,
+        "category": "Zhejiang Cuisine",
+        "description": "Tender shrimp with elegant tea fragrance, jade green color",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj4",
+        "name": "Beggar's Chicken",
+        "price": 88,
+        "category": "Zhejiang Cuisine",
+        "description": "Tender chicken with rich aroma, traditional preparation method",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj5",
+        "name": "Sister Song's Fish Soup",
+        "price": 42,
+        "category": "Zhejiang Cuisine",
+        "description": "Delicious fish soup with smooth texture, traditional Hangzhou dish",
+        "spicy_level": 0
+      }
+    ]
+  },
+  "drinks": {
+    "tea": [
+      {
+        "id": "t1",
+        "name": "Longjing Tea",
+        "price": 25,
+        "category": "Tea",
+        "description": "West Lake Longjing, fragrant and mellow with jade green color"
+      },
+      {
+        "id": "t2",
+        "name": "Tieguanyin",
+        "price": 28,
+        "category": "Tea",
+        "description": "Fujian famous tea with orchid fragrance and lasting aftertaste"
+      },
+      {
+        "id": "t3",
+        "name": "Pu'er Tea",
+        "price": 30,
+        "category": "Tea",
+        "description": "Yunnan Pu'er with aged aroma, gentle and stomach-warming"
+      },
+      {
+        "id": "t4",
+        "name": "Da Hong Pao",
+        "price": 35,
+        "category": "Tea",
+        "description": "Wuyi Rock Tea with distinct mineral notes, mellow and refreshing"
+      },
+      {
+        "id": "t5",
+        "name": "Biluochun",
+        "price": 28,
+        "category": "Tea",
+        "description": "Jiangsu famous tea with rich aroma and fresh taste"
+      },
+      {
+        "id": "t6",
+        "name": "Jasmine Tea",
+        "price": 20,
+        "category": "Tea",
+        "description": "Jasmine fragrance, fresh and elegant, refreshing and invigorating"
+      }
+    ],
+    "juice": [
+      {
+        "id": "j1",
+        "name": "Fresh Watermelon Juice",
+        "price": 18,
+        "category": "Juice",
+        "description": "Freshly squeezed watermelon, sweet and thirst-quenching, perfect for summer"
+      },
+      {
+        "id": "j2",
+        "name": "Fresh Orange Juice",
+        "price": 22,
+        "category": "Juice",
+        "description": "Freshly squeezed oranges, rich in Vitamin C"
+      },
+      {
+        "id": "j3",
+        "name": "Mango Juice",
+        "price": 25,
+        "category": "Juice",
+        "description": "Rich mango flavor, sweet and delicious with smooth texture"
+      },
+      {
+        "id": "j4",
+        "name": "Dragon Fruit Juice",
+        "price": 20,
+        "category": "Juice",
+        "description": "Freshly squeezed dragon fruit, vibrant color, nutritious and healthy"
+      },
+      {
+        "id": "j5",
+        "name": "Honey Grapefruit Tea",
+        "price": 22,
+        "category": "Juice",
+        "description": "Grapefruit fragrance with sweet honey, cooling and moisturizing"
+      }
+    ],
+    "soy_milk": [
+      {
+        "id": "sm1",
+        "name": "Original Soy Milk",
+        "price": 8,
+        "category": "Soy Milk",
+        "description": "Ground from soybeans, rich bean aroma, nutritious and healthy"
+      },
+      {
+        "id": "sm2",
+        "name": "Black Soy Milk",
+        "price": 10,
+        "category": "Soy Milk",
+        "description": "Ground from black beans, nourishing and beautifying, rich in anthocyanins"
+      },
+      {
+        "id": "sm3",
+        "name": "Five Grain Soy Milk",
+        "price": 12,
+        "category": "Soy Milk",
+        "description": "Mixed grains, balanced nutrition, healthy choice"
+      }
+    ],
+    "soup": [
+      {
+        "id": "sp1",
+        "name": "Duck Soup",
+        "price": 35,
+        "category": "Soup",
+        "description": "Tender duck meat with rich broth, nourishing and healthy"
+      },
+      {
+        "id": "sp2",
+        "name": "Pork Rib and Corn Soup",
+        "price": 28,
+        "category": "Soup",
+        "description": "Aromatic pork ribs with sweet corn, nutritious and rich"
+      },
+      {
+        "id": "sp3",
+        "name": "Tomato and Egg Soup",
+        "price": 15,
+        "category": "Soup",
+        "description": "Sweet and sour tomato with silky egg, appetizing and refreshing"
+      },
+      {
+        "id": "sp4",
+        "name": "Hot and Sour Soup",
+        "price": 18,
+        "category": "Soup",
+        "description": "Balanced hot and sour flavors with rich ingredients, appetizing"
+      }
+    ]
+  }
+}
+

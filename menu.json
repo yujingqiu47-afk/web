@@ -1,0 +1,448 @@
+{
+  "dishes": {
+    "sichuan": [
+      {
+        "id": "sc1",
+        "name": "麻婆豆腐",
+        "price": 28,
+        "category": "川菜",
+        "description": "经典川菜，豆腐嫩滑，麻辣鲜香",
+        "spicy_level": 4
+      },
+      {
+        "id": "sc2",
+        "name": "水煮鱼",
+        "price": 58,
+        "category": "川菜",
+        "description": "鱼肉鲜嫩，麻辣浓香，配以大量辣椒和花椒",
+        "spicy_level": 5
+      },
+      {
+        "id": "sc3",
+        "name": "回锅肉",
+        "price": 38,
+        "category": "川菜",
+        "description": "五花肉肥瘦相间，配青椒蒜苗，香辣下饭",
+        "spicy_level": 3
+      },
+      {
+        "id": "sc4",
+        "name": "宫保鸡丁",
+        "price": 32,
+        "category": "川菜",
+        "description": "鸡丁嫩滑，花生酥脆，酸甜微辣",
+        "spicy_level": 2
+      },
+      {
+        "id": "sc5",
+        "name": "夫妻肺片",
+        "price": 35,
+        "category": "川菜",
+        "description": "牛肉牛杂切薄片，麻辣鲜香，口感丰富",
+        "spicy_level": 4
+      },
+      {
+        "id": "sc6",
+        "name": "毛血旺",
+        "price": 45,
+        "category": "川菜",
+        "description": "鸭血嫩滑，配毛肚黄喉，麻辣滚烫",
+        "spicy_level": 5
+      },
+      {
+        "id": "sc7",
+        "name": "鱼香肉丝",
+        "price": 28,
+        "category": "川菜",
+        "description": "猪肉丝配木耳笋丝，鱼香味浓郁",
+        "spicy_level": 2
+      },
+      {
+        "id": "sc8",
+        "name": "口水鸡",
+        "price": 32,
+        "category": "川菜",
+        "description": "鸡肉嫩滑，红油麻辣，口感丰富",
+        "spicy_level": 3
+      }
+    ],
+    "cantonese": [
+      {
+        "id": "gd1",
+        "name": "白切鸡",
+        "price": 48,
+        "category": "粤菜",
+        "description": "鸡肉鲜嫩，原汁原味，配姜葱酱油",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd2",
+        "name": "清蒸鲈鱼",
+        "price": 68,
+        "category": "粤菜",
+        "description": "鱼肉细嫩，保持原味，清淡鲜美",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd3",
+        "name": "烧鹅",
+        "price": 78,
+        "category": "粤菜",
+        "description": "皮脆肉嫩，香气扑鼻，广东名菜",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd4",
+        "name": "叉烧",
+        "price": 38,
+        "category": "粤菜",
+        "description": "猪肉香甜，色泽红亮，肉质软嫩",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd5",
+        "name": "蜜汁叉烧",
+        "price": 42,
+        "category": "粤菜",
+        "description": "甜而不腻，叉烧外焦里嫩，蜜汁浓郁",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd6",
+        "name": "虾饺",
+        "price": 28,
+        "category": "粤菜",
+        "description": "皮薄馅嫩，虾肉鲜美，广式点心代表",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd7",
+        "name": "肠粉",
+        "price": 18,
+        "category": "粤菜",
+        "description": "米皮滑嫩，配鲜虾或叉烧，淋上酱油",
+        "spicy_level": 0
+      },
+      {
+        "id": "gd8",
+        "name": "干炒牛河",
+        "price": 32,
+        "category": "粤菜",
+        "description": "河粉爽滑，牛肉嫩滑，火候恰到好处",
+        "spicy_level": 0
+      }
+    ],
+    "hunan": [
+      {
+        "id": "hn1",
+        "name": "剁椒鱼头",
+        "price": 68,
+        "category": "湘菜",
+        "description": "鱼头肥美，剁椒鲜辣，汤汁浓郁",
+        "spicy_level": 4
+      },
+      {
+        "id": "hn2",
+        "name": "小炒肉",
+        "price": 35,
+        "category": "湘菜",
+        "description": "湖南家常菜，猪肉香辣，青椒脆嫩",
+        "spicy_level": 3
+      },
+      {
+        "id": "hn3",
+        "name": "毛氏红烧肉",
+        "price": 48,
+        "category": "湘菜",
+        "description": "肉质软烂，色泽红亮，甜而不腻",
+        "spicy_level": 1
+      },
+      {
+        "id": "hn4",
+        "name": "湘西外婆菜",
+        "price": 22,
+        "category": "湘菜",
+        "description": "开胃下饭，酸辣可口，传统湘西风味",
+        "spicy_level": 3
+      },
+      {
+        "id": "hn5",
+        "name": "农家小炒肉",
+        "price": 32,
+        "category": "湘菜",
+        "description": "青椒与五花肉的完美结合，香辣下饭",
+        "spicy_level": 3
+      },
+      {
+        "id": "hn6",
+        "name": "口味虾",
+        "price": 58,
+        "category": "湘菜",
+        "description": "小龙虾麻辣鲜香，汤汁浓郁入味",
+        "spicy_level": 5
+      }
+    ],
+    "shandong": [
+      {
+        "id": "sd1",
+        "name": "九转大肠",
+        "price": 42,
+        "category": "鲁菜",
+        "description": "酸甜咸辣香，口味丰富，猪大肠软烂入味",
+        "spicy_level": 1
+      },
+      {
+        "id": "sd2",
+        "name": "糖醋鲤鱼",
+        "price": 58,
+        "category": "鲁菜",
+        "description": "鱼肉鲜嫩，外酥里嫩，糖醋味浓郁",
+        "spicy_level": 0
+      },
+      {
+        "id": "sd3",
+        "name": "葱烧海参",
+        "price": 128,
+        "category": "鲁菜",
+        "description": "海参软糯，葱香浓郁，营养丰富",
+        "spicy_level": 0
+      },
+      {
+        "id": "sd4",
+        "name": "德州扒鸡",
+        "price": 48,
+        "category": "鲁菜",
+        "description": "鸡肉酥烂，香味浓郁，骨肉易分离",
+        "spicy_level": 0
+      },
+      {
+        "id": "sd5",
+        "name": "油爆双脆",
+        "price": 38,
+        "category": "鲁菜",
+        "description": "猪肚鸡胗爆炒，脆嫩爽口，火候精准",
+        "spicy_level": 0
+      }
+    ],
+    "jiangsu": [
+      {
+        "id": "js1",
+        "name": "松鼠桂鱼",
+        "price": 78,
+        "category": "苏菜",
+        "description": "鱼肉鲜嫩，造型美观，酸甜可口",
+        "spicy_level": 0
+      },
+      {
+        "id": "js2",
+        "name": "狮子头",
+        "price": 48,
+        "category": "苏菜",
+        "description": "肉丸软烂，肥而不腻，汤汁浓郁",
+        "spicy_level": 0
+      },
+      {
+        "id": "js3",
+        "name": "水晶虾仁",
+        "price": 58,
+        "category": "苏菜",
+        "description": "虾仁晶莹剔透，口感脆嫩，清淡鲜美",
+        "spicy_level": 0
+      },
+      {
+        "id": "js4",
+        "name": "蟹粉豆腐",
+        "price": 68,
+        "category": "苏菜",
+        "description": "豆腐细嫩，蟹粉鲜香，汤汁浓郁",
+        "spicy_level": 0
+      },
+      {
+        "id": "js5",
+        "name": "软兜长鱼",
+        "price": 72,
+        "category": "苏菜",
+        "description": "黄鳝软嫩，口感鲜美，江苏名菜",
+        "spicy_level": 0
+      }
+    ],
+    "zhejiang": [
+      {
+        "id": "zj1",
+        "name": "西湖醋鱼",
+        "price": 68,
+        "category": "浙菜",
+        "description": "草鱼鲜嫩，酸甜适口，杭州名菜",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj2",
+        "name": "东坡肉",
+        "price": 52,
+        "category": "浙菜",
+        "description": "五花肉肥瘦相间，软烂入味，酱香浓郁",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj3",
+        "name": "龙井虾仁",
+        "price": 78,
+        "category": "浙菜",
+        "description": "虾仁鲜嫩，茶香清雅，色泽翠绿",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj4",
+        "name": "叫化鸡",
+        "price": 88,
+        "category": "浙菜",
+        "description": "鸡肉酥烂，香味浓郁，传统做法",
+        "spicy_level": 0
+      },
+      {
+        "id": "zj5",
+        "name": "宋嫂鱼羹",
+        "price": 42,
+        "category": "浙菜",
+        "description": "鱼羹鲜美，口感滑嫩，杭州传统名菜",
+        "spicy_level": 0
+      }
+    ]
+  },
+  "drinks": {
+    "tea": [
+      {
+        "id": "t1",
+        "name": "龙井茶",
+        "price": 25,
+        "category": "茶饮",
+        "description": "西湖龙井，清香甘醇，色泽翠绿"
+      },
+      {
+        "id": "t2",
+        "name": "铁观音",
+        "price": 28,
+        "category": "茶饮",
+        "description": "福建名茶，兰花香气，回甘持久"
+      },
+      {
+        "id": "t3",
+        "name": "普洱茶",
+        "price": 30,
+        "category": "茶饮",
+        "description": "云南普洱，陈香浓郁，温润养胃"
+      },
+      {
+        "id": "t4",
+        "name": "大红袍",
+        "price": 35,
+        "category": "茶饮",
+        "description": "武夷岩茶，岩韵明显，醇厚甘爽"
+      },
+      {
+        "id": "t5",
+        "name": "碧螺春",
+        "price": 28,
+        "category": "茶饮",
+        "description": "江苏名茶，香气浓郁，味道鲜醇"
+      },
+      {
+        "id": "t6",
+        "name": "茉莉花茶",
+        "price": 20,
+        "category": "茶饮",
+        "description": "茉莉花香，清新淡雅，提神醒脑"
+      }
+    ],
+    "juice": [
+      {
+        "id": "j1",
+        "name": "鲜榨西瓜汁",
+        "price": 18,
+        "category": "果汁",
+        "description": "西瓜现榨，清甜解渴，消暑佳品"
+      },
+      {
+        "id": "j2",
+        "name": "鲜榨橙汁",
+        "price": 22,
+        "category": "果汁",
+        "description": "新鲜橙子榨汁，维生素C丰富"
+      },
+      {
+        "id": "j3",
+        "name": "芒果汁",
+        "price": 25,
+        "category": "果汁",
+        "description": "芒果浓郁，香甜可口，口感细腻"
+      },
+      {
+        "id": "j4",
+        "name": "火龙果汁",
+        "price": 20,
+        "category": "果汁",
+        "description": "火龙果现榨，色泽鲜艳，营养健康"
+      },
+      {
+        "id": "j5",
+        "name": "蜂蜜柚子茶",
+        "price": 22,
+        "category": "果汁",
+        "description": "柚子清香，蜂蜜甜润，清热润肺"
+      }
+    ],
+    "soy_milk": [
+      {
+        "id": "sm1",
+        "name": "原味豆浆",
+        "price": 8,
+        "category": "豆浆",
+        "description": "黄豆磨制，豆香浓郁，营养健康"
+      },
+      {
+        "id": "sm2",
+        "name": "黑豆浆",
+        "price": 10,
+        "category": "豆浆",
+        "description": "黑豆磨制，滋补养颜，富含花青素"
+      },
+      {
+        "id": "sm3",
+        "name": "五谷豆浆",
+        "price": 12,
+        "category": "豆浆",
+        "description": "五谷杂粮，营养均衡，健康首选"
+      }
+    ],
+    "soup": [
+      {
+        "id": "sp1",
+        "name": "老鸭汤",
+        "price": 35,
+        "category": "汤品",
+        "description": "鸭肉软烂，汤汁浓郁，滋补养生"
+      },
+      {
+        "id": "sp2",
+        "name": "排骨玉米汤",
+        "price": 28,
+        "category": "汤品",
+        "description": "排骨香浓，玉米甘甜，营养丰富"
+      },
+      {
+        "id": "sp3",
+        "name": "番茄蛋花汤",
+        "price": 15,
+        "category": "汤品",
+        "description": "番茄酸甜，蛋花嫩滑，开胃爽口"
+      },
+      {
+        "id": "sp4",
+        "name": "酸辣汤",
+        "price": 18,
+        "category": "汤品",
+        "description": "酸辣适中，配料丰富，开胃下饭"
+      }
+    ]
+  }
+}
